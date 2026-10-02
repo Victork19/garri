@@ -1,6 +1,7 @@
 import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import logo from '../logo.jpg'
+import heroGarri from '../hero-garri.jpg'
 import './styles.css'
 
 const contract = '0xdDDF7AB756C35b4d0537825497e6932780710241'
@@ -9,6 +10,7 @@ const tradeUrl = 'https://ponsfamily.com/launchpad/0xdDDF7AB756C35b4d0537825497e
 function BowlScene() {
   return (
     <div className="bowl-scene" role="img" aria-label="A top-down bowl of soaked garri with sugar, groundnuts and a spoon">
+      <img className="real-garri-photo" src={heroGarri} alt="Soaked garri with groundnuts, milk and a spoon in a bowl" />
       <svg className="bowl-illustration" viewBox="0 0 640 640" aria-hidden="true" focusable="false">
         <defs>
           <radialGradient id="sceneLight" cx="43%" cy="34%" r="70%">
@@ -142,7 +144,7 @@ function App() {
           <div className="hero-copy reveal">
             <p className="eyebrow">$GARRI · ROBINHOOD CHAIN · ETH GAS</p>
             <h1 id="hero-title">Garri dey blind person.</h1>
-            <p className="hero-subline">Now the cup is onchain.</p>
+            <p className="hero-subline">The rewards desk is coming.</p>
             <p className="hero-meta">$GARRI · Robinhood Chain · 0% creator · fees to the people</p>
             <div className="hero-actions">
               <a className="button button-primary" href={tradeUrl} target="_blank" rel="noreferrer">Soak the bag <span aria-hidden="true">↗</span></a>
@@ -212,7 +214,7 @@ function App() {
               <p className="eyebrow">No mystery, just ingredients</p>
               <h2 id="token-title">The token</h2>
             </div>
-            <p className="token-lede">A small cup, a public contract, and a rewards desk funded by the pour.</p>
+            <p className="token-lede">A public contract, a real community, and a rewards desk funded by fees.</p>
           </div>
           <div className="token-grid reveal reveal-delay">
             <div className="token-item"><span>Name</span><strong>GARRI</strong></div>
@@ -231,7 +233,7 @@ function App() {
       </main>
 
       <footer className="site-footer section-shell">
-        <div className="footer-brand"><span className="footer-mark">G</span><span>Garri ontop.</span></div>
+        <div className="footer-brand"><span className="logo-frame footer-logo"><img src={logo} alt="" /></span><span>Garri ontop.</span></div>
         <div className="footer-links">
           <a href="https://x.com/garrionchain" target="_blank" rel="noreferrer">@garrionchain ↗</a>
           <span>Built for the people who know.</span>
